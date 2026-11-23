@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CYBERPUNK // PORTFOLIO</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes scanline{0%{transform:translateY(-100%);}100%{transform:translateY(1000%);}}@keyframes pulse-cyan{0%,100%{opacity:1;}50%{opacity:0.3;}}.scanline-fx{background:linear-gradient(to_bottom,transparent_50%,rgba(0,245,255,0.03)_51%);background-size:100%_4px;}.hud-bracket{clip-path:polygon(0_0,calc(100%_-_8px)_0,100%_8px,100%_100%,8px_100%,0_calc(100%_-_8px));}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#e0b6ff",
+          "on-error": "#690005",
+          "on-secondary": "#4c007d",
+          "on-background": "#e4e1ea",
+          "surface-container": "#1f1f26",
+          "surface-tint": "#00dce5",
+          "on-primary-fixed": "#002021",
+          "outline-variant": "#3a494a",
+          "on-primary-container": "#006c71",
+          "on-secondary-fixed": "#2e004e",
+          "surface-container-low": "#1b1b21",
+          "surface": "#131319",
+          "on-tertiary-fixed": "#3e001e",
+          "inverse-surface": "#e4e1ea",
+          "on-tertiary": "#640034",
+          "surface-dim": "#131319",
+          "surface-variant": "#35343b",
+          "primary-fixed": "#63f7ff",
+          "surface-bright": "#393840",
+          "error-container": "#93000a",
+          "error": "#ffb4ab",
+          "on-secondary-container": "#d7a4ff",
+          "on-secondary-fixed-variant": "#6a0baa",
+          "on-surface-variant": "#b9caca",
+          "tertiary-fixed": "#ffd9e3",
+          "surface-container-highest": "#35343b",
+          "inverse-on-surface": "#303037",
+          "primary-fixed-dim": "#00dce5",
+          "secondary-container": "#6d11ad",
+          "on-error-container": "#ffdad6",
+          "background": "#131319",
+          "on-primary-fixed-variant": "#004f53",
+          "outline": "#849495",
+          "surface-container-high": "#2a2930",
+          "inverse-primary": "#00696e",
+          "on-surface": "#e4e1ea",
+          "secondary": "#e0b6ff",
+          "surface-container-lowest": "#0e0e14",
+          "on-tertiary-container": "#be0069",
+          "tertiary-fixed-dim": "#ffb0c9",
+          "secondary-fixed": "#f2daff",
+          "primary": "#e9feff",
+          "tertiary": "#fff9f8",
+          "on-tertiary-fixed-variant": "#8e004c",
+          "primary-container": "#00f5ff",
+          "on-primary": "#003739",
+          "tertiary-container": "#ffd2de"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "margin-lg": "4rem",
+          "space-xs": "0.25rem",
+          "margin-sm": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "gutter-lg": "2rem",
+          "margin": "2rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Space Mono"],
+          "headline-sm": ["Space Grotesk"],
+          "label-sm": ["Space Mono"],
+          "body-md": ["Noto Sans"],
+          "body-sm": ["Noto Sans"],
+          "display-lg-mobile": ["Space Grotesk"],
+          "headline-md": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "label-md": ["Space Mono"],
+          "headline-lg": ["Space Grotesk"],
+          "headline-xl": ["Space Grotesk"],
+          "body-lg": ["Noto Sans"],
+          "headline-xl-mobile": ["Space Grotesk"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+          "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary"><div class="pointer-events-none fixed inset-0 z-40 scanline-fx opacity-70"></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,245,255,0.06)]"><div class="w-full px-margin-lg h-20 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Cyberpunk Portfolio Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAH7yNWooK3_6TsQZaRR2uJD72fv9QJ9Mn5qgmtP_uz6OzH3lI9Vyn3qxweQjjr7bCAeXBc_qLAwLfpH5G86FQtO1ZBhWURZVOEdF8Sqp9r2mVKBdDerqzLAMl1-thWSIs1hZVwB377AryX-OVEHTcFnSgIDKIhpU4ctzCuZz9T0LCtjERncSY64aQpJIPobtgQWRQloLJC5B2E_qjJyA21UNP8wHes1ITeyHCSkTQptQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CYBERPUNK <span class="text-secondary">//</span> PORTFOLIO</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">2D DIGITAL ARTIST</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-1.5 rounded" data-active-classes="bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]"><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="hero" href="#">01. HERO</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="works" href="#">02. WORKS</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="about" href="#">03. ABOUT</a><a aria-current="page" class="px-space-md py-1 rounded font-label-md transition-all bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]" data-path="contact" href="#">04. CONTACT</a></nav><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high/60 rounded"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary tracking-widest">SYSTEM: ONLINE</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex flex-col items-end"><span class="font-label-sm text-label-sm text-primary-fixed-dim">SEC_ZONE // 09</span><span class="font-label-md text-label-md text-on-surface tracking-wider font-bold">NEO-SEOUL // 2088</span></div><div class="p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container ring-offset-2 ring-offset-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnD2oUdOn1EVAKVfsAZy3d0dOZxb-PvaYOxNTzeszeuOwBtVkVUdX24Z5zsSws14_q7lRMUiNe-w2jyZ1sPNzGY3Fn1mQT1bKgyEySDxLQfuxaYiXi7760mMKl5zHVAnBiG6ykkmRMaBQ-TzrNCMYtx9FyL3_TfJjlSnnckfozHra9JBFgaoSn_OiJb156hJLLeuciJanf5-AQ9lLJjppI7Y8f9FotGgRVLoIdRiH"/></div></div></div></header><main class="w-full pt-20 bg-background relative z-10 min-h-screen"><div class="flex flex-col w-full">
+<!-- Atmospheric Background Ambient Glows -->
+<div class="relative w-full overflow-hidden px-margin-sm md:px-margin lg:px-margin-lg py-space-xl">
+<!-- Cyber Grid Subtle Line Markers & Decorative Coordinates -->
+<div class="flex items-center justify-between font-label-sm text-label-sm text-outline-variant mb-space-sm">
+<div class="flex items-center gap-space-sm">
+<span class="inline-block w-1.5 h-1.5 bg-primary-container"></span>
+<span>SYS_COMM_CH // PORT 443_SECURE</span>
+<span class="text-surface-variant">//</span>
+<span>FREQ: 89.4 MHz</span>
+</div>
+<div class="hidden sm:flex items-center gap-space-md">
+<span>LOC: SECTOR_09 // RAIN_ALLEY</span>
+<span class="text-primary-fixed-dim">SIGNAL: 99.8% LOSSLESS</span>
+</div>
+</div>
+<!-- Section Title Unit -->
+<div class="flex flex-col gap-space-xs mb-space-xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary-fixed font-label-md text-label-md rounded">04 // TERMINAL</span>
+<span class="font-label-sm text-label-sm text-secondary tracking-widest">[UPLINK READY]</span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-bold">
+        TRANSMISSION TERMINAL
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+        ESTABLISH NEURAL LINK &amp; COMMISSION COMMUNICATOR // 建立神經網絡通訊通道，開展賽博龐克視覺概念與商業插畫委託。
+      </p>
+</div>
+<!-- Main Two-Column Tactical Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg items-start">
+<!-- Left Column: Comms Status, Channel Directory, Visual Plate -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Commission Status Beacon -->
+<div class="bg-surface-container-low/85 backdrop-blur-xl p-space-md rounded shadow-xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="relative flex h-3 w-3">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-3 w-3 bg-primary-container"></span>
+</span>
+<span class="font-label-md text-label-md text-primary tracking-wider font-bold">COMMISSION STATUS</span>
+</div>
+<span class="font-label-sm text-label-sm bg-surface-container-high px-2 py-0.5 text-secondary rounded">Q3 / Q4 2024 ACTIVE</span>
+</div>
+<div class="flex flex-col gap-1">
+<div class="font-headline-sm text-headline-sm text-on-surface font-semibold">
+              OPEN FOR CONCEPT ART &amp; KEYFRAMES
+            </div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              接案狀態開啟中：承接遊戲角色原畫、賽博龐克場景概念美術、影視分鏡與專輯視覺包裝。
+            </p>
+</div>
+<!-- Capacity Segmented HUD Meter -->
+<div class="mt-space-md pt-space-sm bg-surface-container-lowest/50 p-space-sm rounded">
+<div class="flex justify-between items-center font-label-sm text-label-sm mb-1.5">
+<span class="text-outline">NEURAL BANDWIDTH // 接案載荷</span>
+<span class="text-primary font-bold">4 / 6 SLOTS RESERVED</span>
+</div>
+<div class="grid grid-cols-6 gap-1 h-2">
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,245,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,245,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,245,255,0.6)]"></div>
+<div class="bg-primary-container rounded-sm shadow-[0_0_8px_rgba(0,245,255,0.6)]"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+<div class="bg-surface-container-highest rounded-sm"></div>
+</div>
+</div>
+</div>
+<!-- Rain District Atmosphere Plate -->
+<div class="relative w-full h-44 rounded overflow-hidden shadow-lg group">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Drenching cyberpunk alley in Neo Tokyo rainstorm at midnight, glowing neon signs in magenta, violet, and electric cyan reflecting over wet asphalt and walking cyborg citizens holding umbrella drones, highly cinematic anime concept art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD1vN0kxa5o57S15KuUM7jW3YicuhJ7tbg2L8j0XyoqR3_JxSwLZAiJWSA05gQ2KmRdnBo0MKTwdyjqUP2G3U-UhNkNeUJwbg-y2Yzqyq6SqYZKDLZqA01ZiUUmLzRBJcRAOttwlquo0eWO5iZImkvR406mdjh8mlaem_pO--Y7N9CjNRo-thYJYfWMcz-dq6RCa32nEgtSMzxDDCAuEBcmGZ90pgDc__ktAkGYbfz1"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/40 to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between font-label-sm text-label-sm">
+<div>
+<span class="text-secondary font-bold block">GEO_LOCATION: DISTRICT 09</span>
+<span class="text-on-surface-variant">LAT 35.6762° N // LON 139.6503° E</span>
+</div>
+<span class="px-2 py-0.5 bg-surface-container-highest/80 text-primary-fixed rounded">雨夜街道視覺</span>
+</div>
+</div>
+<!-- Official Channels Directory -->
+<div class="bg-surface-container-low/70 backdrop-blur-xl p-space-md rounded shadow-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-label-md text-label-md text-on-surface tracking-wider font-bold flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base">hub</span>
+              DIRECT COMMS CHANNELS
+            </span>
+<span class="font-label-sm text-label-sm text-outline">ENC_KEY: AES-256</span>
+</div>
+<!-- Email Direct Copy Entry -->
+<div class="bg-surface-container p-space-sm rounded flex items-center justify-between hover:bg-surface-container-high transition-all">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="p-2 rounded bg-surface-container-highest text-primary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-lg">alternate_email</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">PRIMARY TRANSMISSION</span>
+<span class="font-label-md text-label-md text-on-surface truncate" id="target-email">artist.cyberpulse@matrix.io</span>
+</div>
+</div>
+<button class="px-space-sm py-1.5 bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-sm text-label-sm rounded transition-all flex items-center gap-1" id="copy-email-btn">
+<span class="material-symbols-outlined text-sm">content_copy</span>
+<span id="copy-btn-text">COPY</span>
+</button>
+</div>
+<!-- Social Matrix Grid -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<!-- Artstation -->
+<a class="bg-surface-container p-space-sm rounded flex items-center gap-space-sm hover:bg-surface-container-high transition-all group" href="https://artstation.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-lg transition-colors">palette</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">ARTSTATION</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-semibold">/cyberpulse_art</span>
+</div>
+</a>
+<!-- Behance -->
+<a class="bg-surface-container p-space-sm rounded flex items-center gap-space-sm hover:bg-surface-container-high transition-all group" href="https://behance.net" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-lg transition-colors">auto_awesome_motion</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">BEHANCE</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-semibold">/cyberpulse</span>
+</div>
+</a>
+<!-- Instagram -->
+<a class="bg-surface-container p-space-sm rounded flex items-center gap-space-sm hover:bg-surface-container-high transition-all group" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-lg transition-colors">photo_camera</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">INSTAGRAM</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-semibold">@cyberpulse.2d</span>
+</div>
+</a>
+<!-- Discord -->
+<a class="bg-surface-container p-space-sm rounded flex items-center gap-space-sm hover:bg-surface-container-high transition-all group" href="https://discord.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container text-lg transition-colors">forum</span>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm text-outline">DISCORD NODE</span>
+<span class="font-body-sm text-body-sm text-on-surface truncate font-semibold">CyberPulse#2088</span>
+</div>
+</a>
+</div>
+<!-- Encrypted Guarantee Banner -->
+<div class="mt-space-xs p-space-sm bg-surface-container-high/60 rounded flex items-start gap-space-xs">
+<span class="material-symbols-outlined text-primary-container text-base mt-0.5">lock_clock</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              所有商業委託與合作提案將於 <span class="text-primary font-semibold">24 小時內</span> 回覆加密郵件。緊急專案請直接備註專案 DEADLINE。
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Cyberpunk Transmission Form -->
+<div class="lg:col-span-7 flex flex-col">
+<div class="bg-surface-container-low/90 backdrop-blur-xl p-space-lg rounded-xl shadow-2xl relative">
+<!-- Subtle Top Bar Telemetry -->
+<div class="flex items-center justify-between pb-space-md mb-space-md bg-surface-container-lowest/60 px-space-md py-space-xs rounded">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">terminal</span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider">NEURAL UPLINK TRANSMITTER</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-1.5 bg-primary-container rounded-full animate-ping"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">LIVE PROTOCOL: V4.8.1</span>
+</div>
+</div>
+<!-- The Form -->
+<form class="flex flex-col gap-space-md" id="cyberpunk-contact-form" novalidate="">
+<!-- Row 1: Name and Email -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Name Input Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold" for="contact-name">
+<span class="material-symbols-outlined text-sm">badge</span>
+                  OPERATOR NAME // 姓名 *
+                </label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded outline-none placeholder:text-outline-variant focus:bg-surface-container-high transition-all shadow-inner" id="contact-name" name="name" placeholder="e.g. Kenji Arasaka / Project Director" required="" type="text"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline-variant pointer-events-none">&lt;ID&gt;</span>
+</div>
+<span class="font-label-sm text-label-sm text-error hidden" id="name-error">請輸入發訊者姓名或代表機構</span>
+</div>
+<!-- Email Input Field -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold" for="contact-email">
+<span class="material-symbols-outlined text-sm">mail</span>
+                  RELAY ADDRESS // 電子郵件 *
+                </label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded outline-none placeholder:text-outline-variant focus:bg-surface-container-high transition-all shadow-inner" id="contact-email" name="email" placeholder="contact@corp-domain.net" required="" type="email"/>
+<span class="absolute right-3 top-3 font-label-sm text-label-sm text-outline-variant pointer-events-none">@DNS</span>
+</div>
+<span class="font-label-sm text-label-sm text-error hidden" id="email-error">請填入合規的電子通訊信箱格式</span>
+</div>
+</div>
+<!-- Row 2: Subject & Project Timeline -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+<!-- Subject Dropdown -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold" for="contact-subject">
+<span class="material-symbols-outlined text-sm">category</span>
+                  TRANSMISSION INTENT // 聯絡主旨 *
+                </label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded outline-none focus:bg-surface-container-high transition-all appearance-none cursor-pointer" id="contact-subject" name="subject">
+<option value="commercial">商業合作提案 (Commercial Collaboration)</option>
+<option value="concept_art">角色概念設計委託 (Character Concept Art)</option>
+<option value="environment_art">環境與關鍵格插畫 (Keyframe &amp; Environment)</option>
+<option value="license">既有插畫商業授權 (Artwork IP Licensing)</option>
+<option value="talk">演講講座 / 媒體採訪 (Speaking / Workshop)</option>
+<option value="other">其他特遣事項 (Other Transmission)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+<!-- Estimated Budget / Scale -->
+<div class="flex flex-col gap-1.5">
+<label class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold" for="contact-scale">
+<span class="material-symbols-outlined text-sm">payments</span>
+                  BUDGET BRACKET // 預算規模 (USD)
+                </label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded outline-none focus:bg-surface-container-high transition-all appearance-none cursor-pointer" id="contact-scale" name="scale">
+<option value="tier_1">&lt; $1,000 USD (Single Illustration / Sketch)</option>
+<option selected="" value="tier_2">$1,000 - $3,000 USD (Detailed Keyframe / IP Promo)</option>
+<option value="tier_3">$3,000 - $8,000 USD (Full Concept Pack / Character Set)</option>
+<option value="tier_4">&gt; $8,000 USD (Enterprise Project / Visual Lead)</option>
+<option value="tbd">待評估協議 (To Be Discussed)</option>
+</select>
+<span class="material-symbols-outlined absolute right-3 top-3 text-outline pointer-events-none text-base">expand_more</span>
+</div>
+</div>
+</div>
+<!-- Message Textarea -->
+<div class="flex flex-col gap-1.5">
+<div class="flex items-center justify-between">
+<label class="font-label-sm text-label-sm text-primary flex items-center gap-1 font-bold" for="contact-message">
+<span class="material-symbols-outlined text-sm">edit_note</span>
+                  PAYLOAD MESSAGE // 訊息內容與專案詳情 *
+                </label>
+<span class="font-label-sm text-label-sm text-outline" id="char-counter">0 / 1200 CHARS</span>
+</div>
+<textarea class="w-full bg-surface-container-lowest text-on-surface font-body-md text-body-md px-space-md py-space-sm rounded outline-none placeholder:text-outline-variant focus:bg-surface-container-high transition-all resize-y shadow-inner" id="contact-message" maxlength="1200" name="message" placeholder="&gt; 請描述您的專案背景、預計交付時程（Deadline）、風格參考或需要的美術數量清單..." required="" rows="6"></textarea>
+<span class="font-label-sm text-label-sm text-error hidden" id="message-error">訊息酬載不可為空，請輸入至少 10 字元</span>
+</div>
+<!-- Checkbox for NDA & Terms -->
+<div class="flex items-center gap-space-sm mt-space-xs">
+<label class="relative flex items-center cursor-pointer">
+<input checked="" class="peer sr-only" id="nda-agreement" type="checkbox"/>
+<div class="w-4 h-4 bg-surface-container-lowest peer-checked:bg-primary-container rounded-sm flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-on-primary text-xs opacity-0 peer-checked:opacity-100 font-bold">check</span>
+</div>
+</label>
+<label class="font-body-sm text-body-sm text-on-surface-variant cursor-pointer select-none" for="nda-agreement">
+                本發送通道默認啟動保密協議 (NDA Protected Link)。保證提案資料不外流。
+              </label>
+</div>
+<!-- Submit Button Trigger -->
+<div class="mt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-xs">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-outline">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span>STATUS: BUFFER IDLE</span>
+</div>
+<button class="w-full sm:w-auto px-space-xl py-space-sm bg-primary-container hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg rounded shadow-[0_0_16px_rgba(0,245,255,0.4)] hover:shadow-[0_0_24px_rgba(0,245,255,0.7)] flex items-center justify-center gap-space-sm transition-all transform active:scale-95 cursor-pointer" id="submit-btn" type="submit">
+<span class="material-symbols-outlined text-lg">bolt</span>
+<span>TRANSMIT MESSAGE // 送出訊號 ⚡</span>
+</button>
+</div>
+</form>
+<!-- Interactive Success Modal / Banner -->
+<div class="hidden absolute inset-0 bg-surface-container-lowest/95 backdrop-blur-2xl rounded-xl flex flex-col items-center justify-center p-space-lg text-center z-30" id="transmission-success-modal">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary-container mb-space-md shadow-[0_0_25px_rgba(0,245,255,0.5)]">
+<span class="material-symbols-outlined text-3xl">verified</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold tracking-widest">[SIGNAL ENCRYPTED &amp; DELIVERED]</span>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold mt-1 mb-2">訊號已成功傳輸</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mb-space-lg">
+              感謝您的聯絡！您的提案數據包已安全投遞至藝術家控制台，我們將在 24 小時內回覆至您的中繼信箱。
+            </p>
+<div class="bg-surface-container-high/80 px-space-md py-space-sm rounded font-label-sm text-label-sm text-primary mb-space-lg">
+              PACKET_HASH: <span id="mock-packet-id">#TX-9048-A7F1</span>
+</div>
+<button class="px-space-lg py-space-xs bg-surface-container-highest hover:bg-primary-container hover:text-on-primary text-on-surface font-label-md text-label-md rounded transition-all" id="reset-modal-btn">
+              &lt; 建立新傳輸連線 / RESET &gt;
+            </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Secondary Info / Frequently Asked Questions Bento Tiles -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter mt-space-xl pt-space-md">
+<!-- Bento 1 -->
+<div class="bg-surface-container-low/70 p-space-md rounded flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-space-xs text-primary">
+<span class="material-symbols-outlined text-lg">draw</span>
+<span class="font-label-md text-label-md font-bold">WORKFLOW TIMELINE</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          標準單幅概念設計週期約為 5 - 10 個工作天，包含草圖（Thumbnails）、光影打光（Lighting Keys）與最終上色拋光階段。
+        </p>
+</div>
+<!-- Bento 2 -->
+<div class="bg-surface-container-low/70 p-space-md rounded flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-lg">contract</span>
+<span class="font-label-md text-label-md font-bold">RIGHTS &amp; LICENSING</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          支援商業買斷（Full Buyout）、專案專屬授權（Exclusive Project Usage）與非獨家授權合約，提供清晰雙方協議文本。
+        </p>
+</div>
+<!-- Bento 3 -->
+<div class="bg-surface-container-low/70 p-space-md rounded flex flex-col gap-space-xs shadow-md">
+<div class="flex items-center gap-space-xs text-primary-fixed-dim">
+<span class="material-symbols-outlined text-lg">layers</span>
+<span class="font-label-md text-label-md font-bold">DELIVERABLE ASSETS</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          交付分層 PSD 檔、高解析度 8K/4K TIFF 印刷檔、以及包含色彩打光圖層的專案拆解展示包。
+        </p>
+</div>
+</div>
+</div>
+<script>
+    (function() {
+      // Copy Email functionality
+      const copyBtn = document.getElementById('copy-email-btn');
+      const copyBtnText = document.getElementById('copy-btn-text');
+      const emailElem = document.getElementById('target-email');
+
+      if (copyBtn && emailElem) {
+        copyBtn.addEventListener('click', () => {
+          const emailText = emailElem.innerText.trim();
+          navigator.clipboard.writeText(emailText).then(() => {
+            copyBtnText.innerText = 'COPIED!';
+            copyBtn.classList.add('bg-primary-container', 'text-on-primary');
+            setTimeout(() => {
+              copyBtnText.innerText = 'COPY';
+              copyBtn.classList.remove('bg-primary-container', 'text-on-primary');
+            }, 2500);
+          }).catch(() => {
+            copyBtnText.innerText = 'COPIED!';
+            setTimeout(() => { copyBtnText.innerText = 'COPY'; }, 2000);
+          });
+        });
+      }
+
+      // Character counter for textarea
+      const msgArea = document.getElementById('contact-message');
+      const charCounter = document.getElementById('char-counter');
+
+      if (msgArea && charCounter) {
+        msgArea.addEventListener('input', (e) => {
+          const count = e.target.value.length;
+          charCounter.innerText = `${count} / 1200 CHARS`;
+          if (count > 1000) {
+            charCounter.classList.add('text-secondary');
+          } else {
+            charCounter.classList.remove('text-secondary');
+          }
+        });
+      }
+
+      // Form validation & simulation
+      const form = document.getElementById('cyberpunk-contact-form');
+      const successModal = document.getElementById('transmission-success-modal');
+      const resetModalBtn = document.getElementById('reset-modal-btn');
+      const nameInput = document.getElementById('contact-name');
+      const emailInput = document.getElementById('contact-email');
+      const nameError = document.getElementById('name-error');
+      const emailError = document.getElementById('email-error');
+      const messageError = document.getElementById('message-error');
+      const packetId = document.getElementById('mock-packet-id');
+
+      if (form) {
+        form.addEventListener('submit', (e) => {
+          e.preventDefault();
+          let isValid = true;
+
+          // Name validation
+          if (!nameInput.value.trim()) {
+            nameError.classList.remove('hidden');
+            isValid = false;
+          } else {
+            nameError.classList.add('hidden');
+          }
+
+          // Email validation
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailRegex.test(emailInput.value.trim())) {
+            emailError.classList.remove('hidden');
+            isValid = false;
+          } else {
+            emailError.classList.add('hidden');
+          }
+
+          // Message validation
+          if (msgArea.value.trim().length < 10) {
+            messageError.classList.remove('hidden');
+            isValid = false;
+          } else {
+            messageError.classList.add('hidden');
+          }
+
+          if (isValid) {
+            // Generate randomized transmission hash
+            const randHex = Math.random().toString(16).substr(2, 6).toUpperCase();
+            if (packetId) {
+              packetId.innerText = `#TX-${randHex}-NODE2088`;
+            }
+            // Trigger display of success HUD modal
+            successModal.classList.remove('hidden');
+          }
+        });
+      }
+
+      if (resetModalBtn && form && successModal) {
+        resetModalBtn.addEventListener('click', () => {
+          form.reset();
+          if (charCounter) charCounter.innerText = '0 / 1200 CHARS';
+          successModal.classList.add('hidden');
+        });
+      }
+    })();
+  </script>
+</div></main><footer class="w-full relative z-20 bg-surface-container-lowest/90 backdrop-blur-md pt-space-xl pb-space-lg"><div class="w-full px-margin-lg flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row items-center justify-between gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CYBERCORE SYSTEMS // RUNTIME 4.8.1</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-1">TACTICAL VISUAL DEV • KEYFRAME ILLUSTRATION • ENVIRONMENT DESIGN</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">&lt;ARTSTATION&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;BEHANCE&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;INSTAGRAM&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;GITHUB&gt;</a></div><a class="px-space-md py-space-sm bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" href="#"><span class="material-symbols-outlined text-sm">arrow_upward</span><span>TOP // RETURN</span></a></div><div class="flex flex-col md:flex-row items-center justify-between font-label-sm text-label-sm text-outline gap-space-sm"><div class="flex items-center gap-space-md"><span>LAT: 37.5665° N</span><span>LON: 126.9780° E</span><span>MEM: 128TB OPTICAL</span></div><div><span>© 2088 CYBERPUNK CREATIVE PORTFOLIO. ALL NEURAL RIGHTS RESERVED.</span></div></div></div></footer></body></html>

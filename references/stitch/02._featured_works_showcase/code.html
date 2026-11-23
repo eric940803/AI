@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CYBERPUNK // PORTFOLIO</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes scanline{0%{transform:translateY(-100%);}100%{transform:translateY(1000%);}}@keyframes pulse-cyan{0%,100%{opacity:1;}50%{opacity:0.3;}}.scanline-fx{background:linear-gradient(to_bottom,transparent_50%,rgba(0,245,255,0.03)_51%);background-size:100%_4px;}.hud-bracket{clip-path:polygon(0_0,calc(100%_-_8px)_0,100%_8px,100%_100%,8px_100%,0_calc(100%_-_8px));}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#e0b6ff",
+          "on-error": "#690005",
+          "on-secondary": "#4c007d",
+          "on-background": "#e4e1ea",
+          "surface-container": "#1f1f26",
+          "surface-tint": "#00dce5",
+          "on-primary-fixed": "#002021",
+          "outline-variant": "#3a494a",
+          "on-primary-container": "#006c71",
+          "on-secondary-fixed": "#2e004e",
+          "surface-container-low": "#1b1b21",
+          "surface": "#131319",
+          "on-tertiary-fixed": "#3e001e",
+          "inverse-surface": "#e4e1ea",
+          "on-tertiary": "#640034",
+          "surface-dim": "#131319",
+          "surface-variant": "#35343b",
+          "primary-fixed": "#63f7ff",
+          "surface-bright": "#393840",
+          "error-container": "#93000a",
+          "error": "#ffb4ab",
+          "on-secondary-container": "#d7a4ff",
+          "on-secondary-fixed-variant": "#6a0baa",
+          "on-surface-variant": "#b9caca",
+          "tertiary-fixed": "#ffd9e3",
+          "surface-container-highest": "#35343b",
+          "inverse-on-surface": "#303037",
+          "primary-fixed-dim": "#00dce5",
+          "secondary-container": "#6d11ad",
+          "on-error-container": "#ffdad6",
+          "background": "#131319",
+          "on-primary-fixed-variant": "#004f53",
+          "outline": "#849495",
+          "surface-container-high": "#2a2930",
+          "inverse-primary": "#00696e",
+          "on-surface": "#e4e1ea",
+          "secondary": "#e0b6ff",
+          "surface-container-lowest": "#0e0e14",
+          "on-tertiary-container": "#be0069",
+          "tertiary-fixed-dim": "#ffb0c9",
+          "secondary-fixed": "#f2daff",
+          "primary": "#e9feff",
+          "tertiary": "#fff9f8",
+          "on-tertiary-fixed-variant": "#8e004c",
+          "primary-container": "#00f5ff",
+          "on-primary": "#003739",
+          "tertiary-container": "#ffd2de"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "margin-lg": "4rem",
+          "space-xs": "0.25rem",
+          "margin-sm": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "gutter-lg": "2rem",
+          "margin": "2rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Space Mono"],
+          "headline-sm": ["Space Grotesk"],
+          "label-sm": ["Space Mono"],
+          "body-md": ["Noto Sans"],
+          "body-sm": ["Noto Sans"],
+          "display-lg-mobile": ["Space Grotesk"],
+          "headline-md": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "label-md": ["Space Mono"],
+          "headline-lg": ["Space Grotesk"],
+          "headline-xl": ["Space Grotesk"],
+          "body-lg": ["Noto Sans"],
+          "headline-xl-mobile": ["Space Grotesk"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+          "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary"><div class="pointer-events-none fixed inset-0 z-40 scanline-fx opacity-70"></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,245,255,0.06)]"><div class="w-full px-margin-lg h-20 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Cyberpunk Portfolio Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAH7yNWooK3_6TsQZaRR2uJD72fv9QJ9Mn5qgmtP_uz6OzH3lI9Vyn3qxweQjjr7bCAeXBc_qLAwLfpH5G86FQtO1ZBhWURZVOEdF8Sqp9r2mVKBdDerqzLAMl1-thWSIs1hZVwB377AryX-OVEHTcFnSgIDKIhpU4ctzCuZz9T0LCtjERncSY64aQpJIPobtgQWRQloLJC5B2E_qjJyA21UNP8wHes1ITeyHCSkTQptQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CYBERPUNK <span class="text-secondary">//</span> PORTFOLIO</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">2D DIGITAL ARTIST</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-1.5 rounded" data-active-classes="bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]"><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="hero" href="#">01. HERO</a><a aria-current="page" class="px-space-md py-1 rounded font-label-md transition-all bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]" data-path="works" href="#">02. WORKS</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="about" href="#">03. ABOUT</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="contact" href="#">04. CONTACT</a></nav><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high/60 rounded"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary tracking-widest">SYSTEM: ONLINE</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex flex-col items-end"><span class="font-label-sm text-label-sm text-primary-fixed-dim">SEC_ZONE // 09</span><span class="font-label-md text-label-md text-on-surface tracking-wider font-bold">NEO-SEOUL // 2088</span></div><div class="p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container ring-offset-2 ring-offset-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnD2oUdOn1EVAKVfsAZy3d0dOZxb-PvaYOxNTzeszeuOwBtVkVUdX24Z5zsSws14_q7lRMUiNe-w2jyZ1sPNzGY3Fn1mQT1bKgyEySDxLQfuxaYiXi7760mMKl5zHVAnBiG6ykkmRMaBQ-TzrNCMYtx9FyL3_TfJjlSnnckfozHra9JBFgaoSn_OiJb156hJLLeuciJanf5-AQ9lLJjppI7Y8f9FotGgRVLoIdRiH"/></div></div></div></header><main class="w-full pt-20 bg-background relative z-10 min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Ambient Telemetry Strip -->
+<div class="w-full px-margin-lg py-space-sm flex flex-wrap items-center justify-between gap-space-sm bg-surface-container-lowest">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-ping"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest">DATASTREAM: SECURE // 256-BIT SYNC</span>
+</div>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">ARCHIVE_INDEX: v4.81</span>
+<span class="text-outline-variant font-label-sm text-label-sm">/</span>
+<span class="font-label-sm text-label-sm text-secondary">ACTIVE_RENDER: NEURAL_BUFFER_LOADED</span>
+</div>
+<div class="flex items-center gap-space-lg">
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>GPU_ACCEL:</span>
+<span class="text-primary font-bold">100% TACTICAL</span>
+</div>
+<div class="flex items-center gap-1 font-label-sm text-label-sm text-on-surface-variant">
+<span>VIEWPORT:</span>
+<span class="text-primary-fixed-dim">UHD 3840×2160</span>
+</div>
+</div>
+</div>
+<!-- Main Showcase Container -->
+<section class="w-full px-margin-lg py-space-xl relative">
+<!-- Header Block with Cyberpunk Angular Accents -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg">
+<div class="flex flex-col gap-space-xs max-w-3xl">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 bg-surface-container-high text-primary-container font-label-sm text-label-sm tracking-widest rounded-none hud-bracket shadow-sm">FILE_SYS // 02</span>
+<span class="font-label-sm text-label-sm text-outline tracking-wider">SEC_CLASS: LEVEL_9_CLEARANCE</span>
+<span class="w-12 h-px bg-outline-variant"></span>
+</div>
+<h1 class="font-headline-xl text-headline-xl text-primary tracking-tight font-bold">
+          02 // FEATURED WORKS
+        </h1>
+<p class="font-label-md text-label-md text-on-surface-variant tracking-wider uppercase">
+          ARCHIVED DIGITAL ARTIFACTS &amp; 2D ILLUSTRATIONS
+        </p>
+</div>
+<!-- Quick Telemetry Diagnostic Gauge -->
+<div class="p-space-sm bg-surface-container-low rounded-lg shadow-md flex items-center gap-space-md">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">COMMISSION LOAD</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wider">85% ENGAGED</span>
+</div>
+<div class="flex gap-1 h-5 items-center">
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-primary-container"></span>
+<span class="w-1.5 h-4 bg-secondary"></span>
+<span class="w-1.5 h-4 bg-secondary"></span>
+<span class="w-1.5 h-4 bg-surface-container-highest"></span>
+<span class="w-1.5 h-4 bg-surface-container-highest"></span>
+</div>
+</div>
+</div>
+<!-- Category Filter Ribbon -->
+<div class="w-full flex flex-wrap items-center gap-space-sm py-space-md">
+<button class="filter-btn active group px-space-md py-2 bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.35)] rounded font-label-md text-label-md transition-all flex items-center gap-space-xs" data-filter="all">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+<span>ALL</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">[24]</span>
+</button>
+<button class="filter-btn group px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-all flex items-center gap-space-xs" data-filter="illustration">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant group-hover:bg-primary-container"></span>
+<span>DIGITAL ILLUSTRATION</span>
+<span class="text-outline font-label-sm text-label-sm group-hover:text-primary-fixed-dim">[08]</span>
+</button>
+<button class="filter-btn group px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-all flex items-center gap-space-xs" data-filter="character">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant group-hover:bg-secondary"></span>
+<span>CHARACTER DESIGN</span>
+<span class="text-outline font-label-sm text-label-sm group-hover:text-secondary">[06]</span>
+</button>
+<button class="filter-btn group px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-all flex items-center gap-space-xs" data-filter="concept">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant group-hover:bg-primary-container"></span>
+<span>CONCEPT ART</span>
+<span class="text-outline font-label-sm text-label-sm group-hover:text-primary-fixed-dim">[07]</span>
+</button>
+<button class="filter-btn group px-space-md py-2 bg-surface-container-low hover:bg-surface-container text-on-surface-variant hover:text-primary rounded font-label-md text-label-md transition-all flex items-center gap-space-xs" data-filter="graphic">
+<span class="w-1.5 h-1.5 rounded-full bg-outline-variant group-hover:bg-secondary"></span>
+<span>GRAPHIC DESIGN</span>
+<span class="text-outline font-label-sm text-label-sm group-hover:text-secondary">[03]</span>
+</button>
+<div class="ml-auto hidden xl:flex items-center gap-space-xs text-on-surface-variant font-label-sm text-label-sm">
+<span class="material-symbols-outlined text-sm text-primary-container">tune</span>
+<span>RENDER_MATRIX: CYBER_SYNTHETIC // ACTIVE</span>
+</div>
+</div>
+<!-- Artwork Grid Layout -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter-lg pt-space-lg">
+<!-- HERO CARD 1: KAE - CYBER SAMURAI (Span 12 -> Col 7) -->
+<article class="lg:col-span-7 flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_0_24px_rgba(0,245,255,0.18)] transition-all group relative" data-category="character">
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden bg-surface-container-lowest">
+<img alt="Project Kae Cyber Samurai Artwork" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5hTI2cF0D9KCTYycfucVdt90PtXqjDh3A6i3KUizrrxMiRQYg0ecTSyoOrLCz1tUfbd-tG11c9BXGjaZM8WidmvzFg9T_D9VJsFmqdihL_0o66e66MURDH3ibMcmM8OJvXHW7leA3ietMvXn00OaFkNBMttjhERVCzCSxYh4bsLSOgjpvDex2snH8ArjDkvhqfGHplixrIpxBQEYTUmGTdkPOROCs945T01bD0zYf"/>
+<!-- Tactical HUD Layer Over Image -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<!-- Top Tag Bar inside visual -->
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<div class="flex items-center gap-2">
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed font-label-sm text-label-sm rounded uppercase tracking-wider">HERO FEATURE // 01</span>
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm rounded uppercase tracking-wider">YEAR: 2024</span>
+</div>
+<div class="flex items-center gap-1 px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md rounded text-primary-container">
+<span class="material-symbols-outlined text-sm">visibility</span>
+<span class="font-label-sm text-label-sm">34.8K VIEWS</span>
+</div>
+</div>
+<!-- Bottom Floating Specs Tag -->
+<div class="absolute bottom-4 left-4 flex flex-wrap gap-2 pointer-events-none">
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm rounded tracking-wider">&lt;Neural Visor&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm rounded tracking-wider">&lt;Plasma Katana&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary-fixed-dim font-label-sm text-label-sm rounded tracking-wider">&lt;Exo-Spine Harness&gt;</span>
+</div>
+</div>
+<!-- Telemetry & Action Footer -->
+<div class="p-space-lg flex flex-col gap-space-md bg-surface-container">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<div class="flex items-center gap-space-xs text-secondary font-label-sm text-label-sm uppercase tracking-widest">
+<span>CHARACTER DESIGN</span>
+<span>•</span>
+<span class="text-on-surface-variant">KEYFRAME 2D VISDEV</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight mt-1">
+                PROJECT // 'KAE' - CYBER SAMURAI
+              </h2>
+</div>
+<div class="flex flex-col sm:items-end">
+<span class="font-label-sm text-label-sm text-on-surface-variant">PIPELINE TOOLS</span>
+<span class="font-label-md text-label-md text-primary tracking-wider">Photoshop / Procreate</span>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">
+            Tactical cyber-ronin operative engineered for covert strike ops in lower Sector 11. Rigged with synthetic reinforced muscle weave, dual heat-dispersion plasma nodes, and a hyper-frequency kinetic blade.
+          </p>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-outline">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span> RES: 7680×4320</span>
+<span>LAYERS: 184</span>
+<span>TIME: 42H</span>
+</div>
+<button class="px-space-md py-space-sm bg-primary-container hover:bg-primary-fixed text-on-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all shadow-[0_0_16px_rgba(0,245,255,0.4)]" onclick="openArtworkModal('kae')">
+<span>VIEW PROJECT // 01</span>
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: NEO METROPOLIS // DISTRICT 9 (Span 12 -> Col 5) -->
+<article class="lg:col-span-5 flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_0_24px_rgba(224,182,255,0.18)] transition-all group relative" data-category="concept">
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/10] lg:aspect-auto lg:h-72 overflow-hidden bg-surface-container-lowest">
+<img alt="Neo Metropolis District 9 Cityscape" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxI7J3ji9VyiEXBSLKMQkOw4lpdVulApxDYsJhzRLOLvqkVbWisw1fUVtOkogVrWhH0YciTNf2MSchwf0ayuKgVEJEmAWWlGelB7rMeefmGOfrJd4z-2A9k2nO7PvAY37fmbNmNaDBLAVOHasGrxhHboWTZ2amUFBf7QMJQLVEzvo12CXGDaUp9OJE-sup64f-FKVxxzGnPwPn39tboc5BWHjU6XpG7uJ2cDX0h5rK"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none">
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm rounded uppercase tracking-wider">PROJECT // 02</span>
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm rounded uppercase tracking-wider">CONCEPT ART</span>
+</div>
+<div class="absolute bottom-4 left-4 flex flex-wrap gap-2 pointer-events-none">
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm rounded tracking-wider">&lt;Environment&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm rounded tracking-wider">&lt;Matte Painting&gt;</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md bg-surface-container">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-primary-fixed-dim uppercase tracking-widest">WORLD BUILDING // KEYFRAME</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">YEAR: 2024</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+              NEO METROPOLIS // DISTRICT 9
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-3">
+              Vertical urban sprawl enveloped in dense atmospheric rain, towering holographic advertising pylons, and layered megastructures. Crafted for AAA cinema sci-fi teaser sequence.
+            </p>
+</div>
+<div class="flex flex-col gap-space-sm pt-space-xs">
+<div class="flex items-center justify-between font-label-sm text-label-sm text-on-surface-variant">
+<span>PIPELINE:</span>
+<span class="text-primary">Photoshop / Blender 2D Grease Pencil</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-outline">LOC: SECTOR 09 CANYON</span>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" onclick="openArtworkModal('cityscape')">
+<span>VIEW PROJECT // 02</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+</article>
+<!-- CARD 3: GHOST PROTOCOL // NEURAL LINK (Span 12 -> Col 6) -->
+<article class="lg:col-span-6 flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_0_20px_rgba(0,245,255,0.15)] transition-all group" data-category="illustration">
+<div class="relative w-full h-80 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="High-concept cyberpunk digital portrait of an android female hacker with chrome skin lines, glowing holographic neural filaments emanating from temple sockets, deep violet and electric cyan neon rim lighting, intricate circuit tattoos on collarbone, dark rain reflections." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbjPFEqeEuSwh3K2Ty7iK3arOaRy7506HAYu7duO4Z64oYp1AHJphiGnabutOuFK5mLOYZlKOT_jODbKKxYU-6IZ1zVFdKw-64QxNR57C_uGAWfylhIdXy_V7ehDjSUvllWBU2pGGawEfjg__dWoR0hILnwfNU4NOS8hSne-5scWVUv3lYxvyv4WepMKbNgYEiGcrASnM2hzfOMsrvuhJOdCedFWaXpXFDGSwRkz1l"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm rounded uppercase tracking-wider">PROJECT // 03</span>
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm rounded uppercase tracking-wider">DIGITAL ILLUSTRATION</span>
+</div>
+<div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm rounded tracking-wider">&lt;Glitch Art&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm rounded tracking-wider">&lt;Anime Aesthetic&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary-fixed-dim font-label-sm text-label-sm rounded tracking-wider">&lt;Neural Weave&gt;</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md bg-surface-container">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">SYNAPSE EXTRACTION SERIES</span>
+<span class="font-label-sm text-label-sm text-secondary">YEAR: 2023</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+              GHOST PROTOCOL // NEURAL LINK
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Visual inquiry into synthetic soul transfer protocols. High-contrast edge specular passes and custom noise shaders designed to simulate optical sensory overload in deep cyberspace.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SOFTWARE</span>
+<span class="font-label-md text-label-md text-primary">Clip Studio Paint / PS</span>
+</div>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" onclick="openArtworkModal('kae')">
+<span>EXPLORE SPEC // 03</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 4: SECTOR ZERO // MECHA TYPOGRAPHY (Span 12 -> Col 6) -->
+<article class="lg:col-span-6 flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl hover:shadow-[0_0_20px_rgba(224,182,255,0.15)] transition-all group" data-category="graphic">
+<div class="relative w-full h-80 overflow-hidden bg-surface-container-lowest">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out" data-alt="Tactical brutalist cyberpunk graphic poster layout with Japanese kanji typography, warning iconography, wireframe technical blueprint overlays of an orbital mecha suit, neon magenta accent decals, high contrast dark slate background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAbHv-6CCyU3od9J-OQZDiKtKiDCfOrcS35no4PT8jAk2rUsc8AVOt7mn8Z9BGJNYvk7QKhc0hUCApc0Zhu34KovLOjzKXqEz4lv_zV29BK7FVD1hMvilq14DlqqWkPOk5VONedB7w_bOjuAe0RRF1FoPci7LIKMFKrukJGoZUM4nhX5fASSuCFNFD9hCXOkHGO7HIJmNkSHeF4XYBQw4zrMzxHxL60pqdz4NiN_8kM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent"></div>
+<div class="absolute top-4 left-4 right-4 flex items-center justify-between">
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-secondary font-label-sm text-label-sm rounded uppercase tracking-wider">PROJECT // 04</span>
+<span class="px-2 py-1 bg-surface-container-lowest/80 backdrop-blur-md text-primary-fixed-dim font-label-sm text-label-sm rounded uppercase tracking-wider">GRAPHIC DESIGN</span>
+</div>
+<div class="absolute bottom-4 left-4 flex flex-wrap gap-2">
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-primary font-label-sm text-label-sm rounded tracking-wider">&lt;Tactical UI&gt;</span>
+<span class="px-2 py-0.5 bg-surface-container-high/90 backdrop-blur-sm text-secondary font-label-sm text-label-sm rounded tracking-wider">&lt;Brutalist Mecha&gt;</span>
+</div>
+</div>
+<div class="p-space-lg flex flex-col justify-between flex-1 gap-space-md bg-surface-container">
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">TACTICAL BRANDING &amp; DECALS</span>
+<span class="font-label-sm text-label-sm text-primary-fixed-dim">YEAR: 2024</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold tracking-tight">
+              SECTOR ZERO // MECHA TYPOGRAPHY
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Fictional military armament brand guidelines and chassis warning signage. Engineered using algorithmic procedural type distortion and screen-print chromatic misregistrations.
+            </p>
+</div>
+<div class="flex items-center justify-between pt-space-xs">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline">SOFTWARE</span>
+<span class="font-label-md text-label-md text-primary">Illustrator / After Effects</span>
+</div>
+<button class="px-space-md py-space-sm bg-surface-container-high hover:bg-secondary hover:text-on-secondary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" onclick="openArtworkModal('cityscape')">
+<span>EXPLORE SPEC // 04</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+<!-- Data Stream Metric Bar -->
+<div class="mt-space-xl p-space-md bg-surface-container-low rounded-xl flex flex-col md:flex-row items-center justify-between gap-space-md shadow-md">
+<div class="flex items-center gap-space-md">
+<div class="w-10 h-10 rounded bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined">terminal</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-primary font-bold">TERMINAL FEED: TRANSMISSION READY</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">FULL 4K SOURCE TIFFS &amp; LAYERED PSDs AVAILABLE FOR INDUSTRY CLIENTS</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full md:w-auto">
+<a class="w-full md:w-auto px-space-lg py-space-sm bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-md text-label-md rounded text-center transition-all" href="#contact">
+          REQUEST CLIENT ARCHIVE ACCESS
+        </a>
+</div>
+</div>
+</section>
+<!-- Interactive High-Fidelity Artwork Detail Modal -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-space-sm sm:p-space-lg bg-surface-container-lowest/90 backdrop-blur-2xl" id="artwork-modal">
+<div class="w-full max-w-6xl max-h-[92vh] flex flex-col bg-surface-container rounded-xl shadow-2xl overflow-hidden relative">
+<!-- Modal Navigation Bar -->
+<div class="px-space-lg py-space-md bg-surface-container-high flex items-center justify-between">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-md text-label-md text-primary font-bold tracking-wider" id="modal-project-id">PROJECT_DATA // 01</span>
+</div>
+<span class="text-outline-variant font-label-sm text-label-sm hidden sm:inline">|</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant hidden sm:inline" id="modal-classification">CLASSIFICATION: ARCHIVAL_TIER_A</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="p-1.5 bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary rounded transition-all" id="modal-prev-btn" title="Previous Artwork">
+<span class="material-symbols-outlined text-sm">arrow_back</span>
+</button>
+<button class="p-1.5 bg-surface-container hover:bg-primary-container hover:text-on-primary text-primary rounded transition-all" id="modal-next-btn" title="Next Artwork">
+<span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+<button class="p-1.5 ml-space-xs bg-surface-container hover:bg-error hover:text-on-error text-primary rounded transition-all" onclick="closeArtworkModal()" title="Close Preview">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+</div>
+<!-- Modal Body (Two-Column Layout) -->
+<div class="flex-1 overflow-y-auto grid grid-cols-1 lg:grid-cols-12 gap-0">
+<!-- Left: High-Res Canvas Viewport -->
+<div class="lg:col-span-7 bg-surface-container-lowest flex flex-col justify-center items-center p-space-md relative min-h-[380px] lg:min-h-[560px]">
+<div class="relative w-full h-full flex items-center justify-center group overflow-hidden">
+<img alt="Artwork Detail Preview" class="max-h-[500px] w-auto object-contain rounded shadow-lg transition-transform duration-300" id="modal-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5hTI2cF0D9KCTYycfucVdt90PtXqjDh3A6i3KUizrrxMiRQYg0ecTSyoOrLCz1tUfbd-tG11c9BXGjaZM8WidmvzFg9T_D9VJsFmqdihL_0o66e66MURDH3ibMcmM8OJvXHW7leA3ietMvXn00OaFkNBMttjhERVCzCSxYh4bsLSOgjpvDex2snH8ArjDkvhqfGHplixrIpxBQEYTUmGTdkPOROCs945T01bD0zYf"/>
+<!-- Zoom Interactive Trigger -->
+<button class="absolute bottom-4 right-4 p-2 bg-surface-container-lowest/80 backdrop-blur-md hover:bg-primary-container hover:text-on-primary text-primary rounded shadow-md transition-all flex items-center gap-1 font-label-sm text-label-sm" id="modal-zoom-toggle">
+<span class="material-symbols-outlined text-sm">zoom_in</span>
+<span id="zoom-label">ZOOM 100%</span>
+</button>
+</div>
+<!-- Bottom Micro Status Bar -->
+<div class="w-full flex items-center justify-between pt-space-sm font-label-sm text-label-sm text-outline">
+<span id="modal-render-engine">ENGINE: HIGH_PASS // 16-BIT COLORSPACE</span>
+<span id="modal-aspect">RATIO: 16:9 NATIVE</span>
+</div>
+</div>
+<!-- Right: Technical Breakdown & Chinese Creative Concept -->
+<div class="lg:col-span-5 p-space-lg flex flex-col gap-space-lg bg-surface-container-low overflow-y-auto">
+<!-- Title & Meta Header -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm rounded" id="modal-badge">CHARACTER DESIGN</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant" id="modal-year">YEAR: 2024</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight" id="modal-title">
+              PROJECT // 'KAE' - CYBER SAMURAI
+            </h3>
+<p class="font-label-sm text-label-sm text-primary-fixed-dim" id="modal-subtitle">
+              SERIES: DISTRICT 9 RECONNAISSANCE UNIT
+            </p>
+</div>
+<!-- 創作理念 (Creation Concept) -->
+<div class="flex flex-col gap-space-xs p-space-md bg-surface-container rounded-lg shadow-sm">
+<div class="flex items-center gap-space-xs text-primary font-label-md text-label-md font-bold">
+<span class="material-symbols-outlined text-base text-primary-container">psychology</span>
+<span>創作理念 (CREATION CONCEPT)</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed" id="modal-concept-text">
+              探討人類肉身與機械意識共生臨界點的視覺語彙。在陰雨綿密的龐克街區，角色『KAE』以俐落且帶有侵略性的武裝外骨骼對峙黑暗勢力。透過高對比度的紫紅離子光刃與電氣藍色調，勾勒出獨行刺客在無序巨型都市中的孤寂與致命威壓。
+            </p>
+</div>
+<!-- 設計概念 & 使用工具 (Design Concept & Tools) -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-secondary uppercase font-bold tracking-wider">
+              設計概念 &amp; 使用工具 (DESIGN SPEC &amp; TOOLS)
+            </span>
+<div class="grid grid-cols-2 gap-space-sm">
+<div class="p-space-sm bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">CORE PIPELINE</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="modal-tools">Photoshop / Procreate</span>
+</div>
+<div class="p-space-sm bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-on-surface-variant block">BRUSH SYSTEM</span>
+<span class="font-label-md text-label-md text-primary font-bold" id="modal-brushes">Hard Edge Synth &amp; Noise</span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant" id="modal-design-desc">
+              裝甲材質運用消光碳纖維搭配高光鈦合金接頭，強調關節動能與靈巧度；霓虹光線採用多重線性減淡（加亮）圖層疊加，使離子態能量粒子呈現逼真的光滲效果。
+            </p>
+</div>
+<!-- 創作過程 (Workflow Stages) -->
+<div class="flex flex-col gap-space-sm">
+<span class="font-label-md text-label-md text-primary-fixed-dim uppercase font-bold tracking-wider">
+              創作過程 (WORKFLOW PIPELINE)
+            </span>
+<div class="flex flex-col gap-2">
+<div class="flex items-center gap-space-sm p-2 bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-primary-container font-bold px-1.5 py-0.5 bg-surface-container-high rounded">01</span>
+<div class="flex flex-col flex-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Thumbnail Sketch</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">快速輪廓草稿確定剪影動態與重心佈局</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-primary-container font-bold px-1.5 py-0.5 bg-surface-container-high rounded">02</span>
+<div class="flex flex-col flex-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Lineart &amp; Precision Vectors</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">高精細賽博裝備精密線稿與管線走向鋪陳</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-primary-container font-bold px-1.5 py-0.5 bg-surface-container-high rounded">03</span>
+<div class="flex flex-col flex-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Value Block-out &amp; Ambient Occlusion</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">黑白明度建立光影景深，鎖定雨夜環境光氛圍</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm p-2 bg-surface-container rounded">
+<span class="font-label-sm text-label-sm text-secondary font-bold px-1.5 py-0.5 bg-surface-container-high rounded">04</span>
+<div class="flex flex-col flex-1">
+<span class="font-label-sm text-label-sm text-primary font-bold">Neon Lighting Pass &amp; FX Finishing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">離子光劍發光層疊加、色差故障噪點與色散調整</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Interaction Buttons -->
+<div class="flex items-center gap-space-sm pt-space-xs mt-auto">
+<button class="flex-1 py-space-sm bg-surface-container-high hover:bg-surface-bright text-primary font-label-md text-label-md rounded text-center transition-all" onclick="closeArtworkModal()">
+              CLOSE ARCHIVE
+            </button>
+<a class="flex-1 py-space-sm bg-primary-container hover:bg-primary text-on-primary font-label-md text-label-md rounded text-center transition-all font-bold" href="#contact">
+              COMMISSION SIMILAR
+            </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+    // Project Dataset
+    const artworkData = {
+      kae: {
+        id: "PROJECT_DATA // 01",
+        title: "PROJECT // 'KAE' - CYBER SAMURAI",
+        subtitle: "SERIES: DISTRICT 9 RECONNAISSANCE UNIT",
+        badge: "CHARACTER DESIGN",
+        year: "YEAR: 2024",
+        tools: "Photoshop / Procreate",
+        brushes: "Hard Edge Synth & Noise",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuD5hTI2cF0D9KCTYycfucVdt90PtXqjDh3A6i3KUizrrxMiRQYg0ecTSyoOrLCz1tUfbd-tG11c9BXGjaZM8WidmvzFg9T_D9VJsFmqdihL_0o66e66MURDH3ibMcmM8OJvXHW7leA3ietMvXn00OaFkNBMttjhERVCzCSxYh4bsLSOgjpvDex2snH8ArjDkvhqfGHplixrIpxBQEYTUmGTdkPOROCs945T01bD0zYf",
+        aspect: "RATIO: 4:3 VERTICAL",
+        concept: "探討人類肉身與機械意識共生臨界點的視覺語彙。在陰雨綿密的龐克街區，角色『KAE』以俐落且帶有侵略性的武裝外骨骼對峙黑暗勢力。透過高對比度的紫紅離子光刃與電氣藍色調，勾勒出獨行刺客在無序巨型都市中的孤寂與致命威壓。",
+        designDesc: "裝甲材質運用消光碳纖維搭配高光鈦合金接頭，強調關節動能與靈巧度；霓虹光線採用多重線性減淡（加亮）圖層疊加，使離子態能量粒子呈現逼真的光滲效果。"
+      },
+      cityscape: {
+        id: "PROJECT_DATA // 02",
+        title: "NEO METROPOLIS // DISTRICT 9",
+        subtitle: "SERIES: VERTICAL ARCHITECTURE ATLAS",
+        badge: "CONCEPT ART",
+        year: "YEAR: 2024",
+        tools: "Photoshop / Blender 2D Grease Pencil",
+        brushes: "Architectural Perspective Matte",
+        image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDxI7J3ji9VyiEXBSLKMQkOw4lpdVulApxDYsJhzRLOLvqkVbWisw1fUVtOkogVrWhH0YciTNf2MSchwf0ayuKgVEJEmAWWlGelB7rMeefmGOfrJd4z-2A9k2nO7PvAY37fmbNmNaDBLAVOHasGrxhHboWTZ2amUFBf7QMJQLVEzvo12CXGDaUp9OJE-sup64f-FKVxxzGnPwPn39tboc5BWHjU6XpG7uJ2cDX0h5rK",
+        aspect: "RATIO: 16:9 ULTRA-WIDE",
+        concept: "以垂直化高密度巨型建築為基礎，重現潮濕陰暗但被狂亂全息霓虹燈海覆蓋的近未來都會街景。雨水反射街道的光源與行人防護傘構成對比，展現底層生活與高科技繁榮並存的賽博龐克核心命題。",
+        designDesc: "採用三點透視構築壓迫感，運用2D手繪搭配Blender基礎體塊做透視輔助，精細繪製日文字體全息看板與懸浮警備載具的動態軌跡光流。"
+      }
+    };
+
+    let currentKey = 'kae';
+    let isZoomed = false;
+
+    function openArtworkModal(key) {
+      currentKey = key;
+      const data = artworkData[key];
+      if (!data) return;
+
+      document.getElementById('modal-project-id').innerText = data.id;
+      document.getElementById('modal-title').innerText = data.title;
+      document.getElementById('modal-subtitle').innerText = data.subtitle;
+      document.getElementById('modal-badge').innerText = data.badge;
+      document.getElementById('modal-year').innerText = data.year;
+      document.getElementById('modal-tools').innerText = data.tools;
+      document.getElementById('modal-brushes').innerText = data.brushes;
+      document.getElementById('modal-image').src = data.image;
+      document.getElementById('modal-aspect').innerText = data.aspect;
+      document.getElementById('modal-concept-text').innerText = data.concept;
+      document.getElementById('modal-design-desc').innerText = data.designDesc;
+
+      // Reset zoom
+      const img = document.getElementById('modal-image');
+      img.classList.remove('scale-150');
+      document.getElementById('zoom-label').innerText = 'ZOOM 100%';
+      isZoomed = false;
+
+      document.getElementById('artwork-modal').classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+    }
+
+    function closeArtworkModal() {
+      document.getElementById('artwork-modal').classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+    }
+
+    // Zoom Toggle Button
+    document.getElementById('modal-zoom-toggle').addEventListener('click', () => {
+      const img = document.getElementById('modal-image');
+      isZoomed = !isZoomed;
+      if (isZoomed) {
+        img.classList.add('scale-150');
+        document.getElementById('zoom-label').innerText = 'RESET';
+      } else {
+        img.classList.remove('scale-150');
+        document.getElementById('zoom-label').innerText = 'ZOOM 100%';
+      }
+    });
+
+    // Pagination handlers
+    document.getElementById('modal-prev-btn').addEventListener('click', () => {
+      currentKey = (currentKey === 'kae') ? 'cityscape' : 'kae';
+      openArtworkModal(currentKey);
+    });
+
+    document.getElementById('modal-next-btn').addEventListener('click', () => {
+      currentKey = (currentKey === 'kae') ? 'cityscape' : 'kae';
+      openArtworkModal(currentKey);
+    });
+
+    // Category Filtering Logic
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const articles = document.querySelectorAll('article[data-category]');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => {
+          b.classList.remove('active', 'bg-surface-container-high', 'text-primary-fixed', 'shadow-[0_0_12px_rgba(0,245,255,0.35)]');
+          b.classList.add('bg-surface-container-low', 'text-on-surface-variant');
+        });
+
+        btn.classList.add('active', 'bg-surface-container-high', 'text-primary-fixed', 'shadow-[0_0_12px_rgba(0,245,255,0.35)]');
+        btn.classList.remove('bg-surface-container-low', 'text-on-surface-variant');
+
+        const cat = btn.getAttribute('data-filter');
+        articles.forEach(art => {
+          if (cat === 'all' || art.getAttribute('data-category') === cat) {
+            art.style.display = 'flex';
+          } else {
+            art.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Close on Escape key
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeArtworkModal();
+      }
+    });
+  </script>
+</div></main><footer class="w-full relative z-20 bg-surface-container-lowest/90 backdrop-blur-md pt-space-xl pb-space-lg"><div class="w-full px-margin-lg flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row items-center justify-between gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CYBERCORE SYSTEMS // RUNTIME 4.8.1</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-1">TACTICAL VISUAL DEV • KEYFRAME ILLUSTRATION • ENVIRONMENT DESIGN</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">&lt;ARTSTATION&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;BEHANCE&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;INSTAGRAM&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;GITHUB&gt;</a></div><a class="px-space-md py-space-sm bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" href="#"><span class="material-symbols-outlined text-sm">arrow_upward</span><span>TOP // RETURN</span></a></div><div class="flex flex-col md:flex-row items-center justify-between font-label-sm text-label-sm text-outline gap-space-sm"><div class="flex items-center gap-space-md"><span>LAT: 37.5665° N</span><span>LON: 126.9780° E</span><span>MEM: 128TB OPTICAL</span></div><div><span>© 2088 CYBERPUNK CREATIVE PORTFOLIO. ALL NEURAL RIGHTS RESERVED.</span></div></div></div></footer></body></html>

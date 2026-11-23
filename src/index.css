@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: #09090F;
+    color: #e4e1ea;
+  }
+
+  body {
+    background-color: #09090F;
+    overflow-x: hidden;
+  }
+
+  /* Custom subtle cyberpunk scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0e0e14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #2a2930;
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #00f5ff;
+    box-shadow: 0 0 8px rgba(0, 245, 255, 0.5);
+  }
+}
+
+/* Cyberpunk Scanline Effect */
+.scanline-fx {
+  background: linear-gradient(
+    to bottom,
+    transparent 50%,
+    rgba(0, 245, 255, 0.025) 51%
+  );
+  background-size: 100% 4px;
+}
+
+/* Tactical HUD Chamfered Cuts */
+.hud-bracket {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+}
+
+.hud-bracket-sm {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 8px) 0,
+    100% 8px,
+    100% 100%,
+    8px 100%,
+    0 calc(100% - 8px)
+  );
+}
+
+.hud-corner-bl {
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% 100%,
+    12px 100%,
+    0 calc(100% - 12px)
+  );
+}
+
+.hud-corner-tr {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 12px) 0,
+    100% 12px,
+    100% 100%,
+    0 100%
+  );
+}
+
+/* Neon Text Glow */
+.text-glow-cyan {
+  text-shadow: 0 0 10px rgba(0, 245, 255, 0.6), 0 0 20px rgba(0, 245, 255, 0.3);
+}
+
+.text-glow-purple {
+  text-shadow: 0 0 10px rgba(157, 78, 221, 0.6), 0 0 20px rgba(157, 78, 221, 0.3);
+}
+
+.text-glow-pink {
+  text-shadow: 0 0 10px rgba(255, 46, 147, 0.6), 0 0 20px rgba(255, 46, 147, 0.3);
+}
+
+/* Tactical Grid Background */
+.bg-cyber-grid {
+  background-image: 
+    linear-gradient(to right, rgba(0, 245, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 245, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}

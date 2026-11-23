@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>CYBERPUNK // PORTFOLIO</title><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&amp;family=Space+Grotesk:wght@600;700&amp;family=Space+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}@keyframes scanline{0%{transform:translateY(-100%);}100%{transform:translateY(1000%);}}@keyframes pulse-cyan{0%,100%{opacity:1;}50%{opacity:0.3;}}.scanline-fx{background:linear-gradient(to_bottom,transparent_50%,rgba(0,245,255,0.03)_51%);background-size:100%_4px;}.hud-bracket{clip-path:polygon(0_0,calc(100%_-_8px)_0,100%_8px,100%_100%,8px_100%,0_calc(100%_-_8px));}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "secondary-fixed-dim": "#e0b6ff",
+          "on-error": "#690005",
+          "on-secondary": "#4c007d",
+          "on-background": "#e4e1ea",
+          "surface-container": "#1f1f26",
+          "surface-tint": "#00dce5",
+          "on-primary-fixed": "#002021",
+          "outline-variant": "#3a494a",
+          "on-primary-container": "#006c71",
+          "on-secondary-fixed": "#2e004e",
+          "surface-container-low": "#1b1b21",
+          "surface": "#131319",
+          "on-tertiary-fixed": "#3e001e",
+          "inverse-surface": "#e4e1ea",
+          "on-tertiary": "#640034",
+          "surface-dim": "#131319",
+          "surface-variant": "#35343b",
+          "primary-fixed": "#63f7ff",
+          "surface-bright": "#393840",
+          "error-container": "#93000a",
+          "error": "#ffb4ab",
+          "on-secondary-container": "#d7a4ff",
+          "on-secondary-fixed-variant": "#6a0baa",
+          "on-surface-variant": "#b9caca",
+          "tertiary-fixed": "#ffd9e3",
+          "surface-container-highest": "#35343b",
+          "inverse-on-surface": "#303037",
+          "primary-fixed-dim": "#00dce5",
+          "secondary-container": "#6d11ad",
+          "on-error-container": "#ffdad6",
+          "background": "#131319",
+          "on-primary-fixed-variant": "#004f53",
+          "outline": "#849495",
+          "surface-container-high": "#2a2930",
+          "inverse-primary": "#00696e",
+          "on-surface": "#e4e1ea",
+          "secondary": "#e0b6ff",
+          "surface-container-lowest": "#0e0e14",
+          "on-tertiary-container": "#be0069",
+          "tertiary-fixed-dim": "#ffb0c9",
+          "secondary-fixed": "#f2daff",
+          "primary": "#e9feff",
+          "tertiary": "#fff9f8",
+          "on-tertiary-fixed-variant": "#8e004c",
+          "primary-container": "#00f5ff",
+          "on-primary": "#003739",
+          "tertiary-container": "#ffd2de"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.25rem",
+          "lg": "0.5rem",
+          "xl": "0.75rem",
+          "full": "9999px"
+        },
+        "spacing": {
+          "gutter": "1.5rem",
+          "margin-lg": "4rem",
+          "space-xs": "0.25rem",
+          "margin-sm": "1rem",
+          "space-xl": "2.5rem",
+          "space-lg": "1.5rem",
+          "space-sm": "0.5rem",
+          "gutter-sm": "1rem",
+          "gutter-lg": "2rem",
+          "margin": "2rem",
+          "space-md": "1rem"
+        },
+        "fontFamily": {
+          "label-lg": ["Space Mono"],
+          "headline-sm": ["Space Grotesk"],
+          "label-sm": ["Space Mono"],
+          "body-md": ["Noto Sans"],
+          "body-sm": ["Noto Sans"],
+          "display-lg-mobile": ["Space Grotesk"],
+          "headline-md": ["Space Grotesk"],
+          "display-lg": ["Space Grotesk"],
+          "label-md": ["Space Mono"],
+          "headline-lg": ["Space Grotesk"],
+          "headline-xl": ["Space Grotesk"],
+          "body-lg": ["Noto Sans"],
+          "headline-xl-mobile": ["Space Grotesk"]
+        },
+        "fontSize": {
+          "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.08em", "fontWeight": "700"}],
+          "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.02em", "fontWeight": "600"}],
+          "label-sm": ["10px", {"lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500"}],
+          "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+          "display-lg-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "headline-md": ["24px", {"lineHeight": "32px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+          "display-lg": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+          "label-md": ["12px", {"lineHeight": "16px", "letterSpacing": "0.06em", "fontWeight": "500"}],
+          "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "0em", "fontWeight": "600"}],
+          "headline-xl": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+          "body-lg": ["18px", {"lineHeight": "28px", "letterSpacing": "0em", "fontWeight": "400"}],
+          "headline-xl-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "700"}]
+        }
+      }
+    }
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen relative selection:bg-primary-container selection:text-on-primary"><div class="pointer-events-none fixed inset-0 z-40 scanline-fx opacity-70"></div><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,245,255,0.06)]"><div class="w-full px-margin-lg h-20 flex items-center justify-between"><div class="flex items-center gap-space-md"><img alt="Cyberpunk Portfolio Emblem Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/ALJJyrAH7yNWooK3_6TsQZaRR2uJD72fv9QJ9Mn5qgmtP_uz6OzH3lI9Vyn3qxweQjjr7bCAeXBc_qLAwLfpH5G86FQtO1ZBhWURZVOEdF8Sqp9r2mVKBdDerqzLAMl1-thWSIs1hZVwB377AryX-OVEHTcFnSgIDKIhpU4ctzCuZz9T0LCtjERncSY64aQpJIPobtgQWRQloLJC5B2E_qjJyA21UNP8wHes1ITeyHCSkTQptQ"/><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-primary tracking-tight font-bold">CYBERPUNK <span class="text-secondary">//</span> PORTFOLIO</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">2D DIGITAL ARTIST</span></div></div><div class="flex items-center gap-space-lg"><nav class="hidden xl:flex items-center gap-space-sm bg-surface-container-low/70 px-space-sm py-1.5 rounded" data-active-classes="bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]"><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="hero" href="#">01. HERO</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="works" href="#">02. WORKS</a><a aria-current="page" class="px-space-md py-1 rounded font-label-md transition-all bg-surface-container-high text-primary-fixed shadow-[0_0_12px_rgba(0,245,255,0.25)]" data-path="about" href="#">03. ABOUT</a><a class="px-space-md py-1 rounded font-label-md text-label-md text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-all" data-path="contact" href="#">04. CONTACT</a></nav><div class="hidden md:flex items-center gap-space-xs px-space-sm py-1 bg-surface-container-high/60 rounded"><span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm text-primary tracking-widest">SYSTEM: ONLINE</span></div></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex flex-col items-end"><span class="font-label-sm text-label-sm text-primary-fixed-dim">SEC_ZONE // 09</span><span class="font-label-md text-label-md text-on-surface tracking-wider font-bold">NEO-SEOUL // 2088</span></div><div class="p-0.5 rounded-full bg-surface-container-high"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container ring-offset-2 ring-offset-surface-container-lowest" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnD2oUdOn1EVAKVfsAZy3d0dOZxb-PvaYOxNTzeszeuOwBtVkVUdX24Z5zsSws14_q7lRMUiNe-w2jyZ1sPNzGY3Fn1mQT1bKgyEySDxLQfuxaYiXi7760mMKl5zHVAnBiG6ykkmRMaBQ-TzrNCMYtx9FyL3_TfJjlSnnckfozHra9JBFgaoSn_OiJb156hJLLeuciJanf5-AQ9lLJjppI7Y8f9FotGgRVLoIdRiH"/></div></div></div></header><main class="w-full pt-20 bg-background relative z-10 min-h-screen"><div class="flex flex-col w-full">
+<!-- Scanline & Ambient Backdrop Glows -->
+<div class="relative w-full overflow-hidden px-margin-sm md:px-margin lg:px-margin-lg pb-space-xl">
+<!-- Ambient blurred background elements -->
+<div class="absolute -top-32 -left-20 w-96 h-96 bg-secondary-container/20 rounded-full blur-[100px] pointer-events-none"></div>
+<div class="absolute top-1/3 -right-24 w-96 h-96 bg-primary-container/15 rounded-full blur-[120px] pointer-events-none"></div>
+<div class="absolute bottom-10 left-1/4 w-80 h-80 bg-on-tertiary-container/10 rounded-full blur-[90px] pointer-events-none"></div>
+<!-- Section Header HUD Block -->
+<div class="relative flex flex-col md:flex-row md:items-end justify-between gap-space-md pt-space-lg pb-space-xl">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs text-primary-fixed-dim">
+<span class="w-2 h-2 bg-primary-container inline-block shadow-[0_0_8px_#00f5ff]"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container">DATABASE RECORD: SEC_03 // AUTHORIZED ACCESS</span>
+</div>
+<div class="flex items-baseline gap-space-sm mt-1">
+<span class="font-display-lg text-display-lg text-primary tracking-tighter">03 // CREATOR DOSSIER</span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant font-medium mt-1">
+          ABOUT ME &amp; NEURAL CAPABILITIES
+        </p>
+</div>
+<!-- Telemetry Status Box -->
+<div class="flex items-center gap-space-md self-start md:self-auto bg-surface-container-low/80 backdrop-blur-md px-space-md py-space-sm rounded-lg shadow-sm">
+<div class="flex flex-col text-right">
+<span class="font-label-sm text-label-sm text-outline">SYS_DIAGNOSTICS</span>
+<span class="font-label-md text-label-md text-primary-fixed tracking-wider">NEURAL LINK: 99.8%</span>
+</div>
+<div class="h-8 w-px bg-surface-container-highest"></div>
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<span class="w-1.5 h-6 bg-primary-container rounded-sm"></span>
+<span class="w-1.5 h-6 bg-secondary-fixed-dim rounded-sm"></span>
+<span class="w-1.5 h-6 bg-surface-container-highest rounded-sm"></span>
+</div>
+</div>
+</div>
+<!-- Main Asymmetric Split Grid Layout -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-gutter-lg items-start">
+<!-- LEFT COLUMN: Artist Dossier & Bio & Timeline (xl:col-span-5) -->
+<div class="xl:col-span-5 flex flex-col gap-space-lg">
+<!-- Cyber ID Card Frame -->
+<div class="relative bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md lg:p-space-lg shadow-xl overflow-hidden group">
+<!-- Corner Tech Accent Decals -->
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary-container/20 to-transparent pointer-events-none"></div>
+<div class="absolute top-2 right-2 text-primary-fixed-dim font-label-sm text-label-sm opacity-60">ID: NX-7091</div>
+<!-- Avatar + Tactical Overlays -->
+<div class="relative w-full aspect-square max-h-[380px] rounded-lg overflow-hidden bg-surface-container-lowest">
+<img alt="Leo Cyberpulse Chen Cybernetic Concept Artist" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRnD2oUdOn1EVAKVfsAZy3d0dOZxb-PvaYOxNTzeszeuOwBtVkVUdX24Z5zsSws14_q7lRMUiNe-w2jyZ1sPNzGY3Fn1mQT1bKgyEySDxLQfuxaYiXi7760mMKl5zHVAnBiG6ykkmRMaBQ-TzrNCMYtx9FyL3_TfJjlSnnckfozHra9JBFgaoSn_OiJb156hJLLeuciJanf5-AQ9lLJjppI7Y8f9FotGgRVLoIdRiH"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/20 to-transparent"></div>
+<!-- Live Status Watermark Inside Art -->
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between">
+<span class="px-space-sm py-0.5 bg-surface-container-lowest/90 backdrop-blur-md rounded font-label-sm text-label-sm text-primary-container flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+                ACTIVE BIOMETRICS
+              </span>
+<span class="px-space-sm py-0.5 bg-surface-container-lowest/90 backdrop-blur-md rounded font-label-sm text-label-sm text-secondary-fixed-dim">
+                SYNAPSE V4.2
+              </span>
+</div>
+</div>
+<!-- Dossier Metadata Stack -->
+<div class="flex flex-col mt-space-md gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">[ CODENAME_ALIAS ]</span>
+<span class="font-label-sm text-label-sm text-outline">CLASS 0-ALPHA</span>
+</div>
+<div class="flex flex-col">
+<h2 class="font-headline-lg text-headline-lg text-primary font-bold tracking-tight">
+                LEO <span class="text-primary-container">‘CYBERPULSE’</span> CHEN
+              </h2>
+<span class="font-label-md text-label-md text-secondary-fixed-dim font-semibold mt-0.5">
+                SENIOR 2D CONCEPT ARTIST &amp; ILLUSTRATOR
+              </span>
+</div>
+<!-- Spec Grid Badges -->
+<div class="grid grid-cols-2 gap-space-sm pt-space-xs mt-space-xs">
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">SECTOR HQ</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-sm text-primary-container">location_on</span>
+                  Taipei / Neo-East
+                </span>
+</div>
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">EXPERIENCE</span>
+<span class="font-body-md text-body-md text-on-surface font-semibold flex items-center gap-1 mt-0.5">
+<span class="material-symbols-outlined text-sm text-secondary-fixed-dim">bolt</span>
+                  8+ Years Sci-Fi Art
+                </span>
+</div>
+</div>
+<!-- Philosophy Statement Block -->
+<div class="bg-surface-container-high/60 backdrop-blur-sm rounded-lg p-space-md mt-space-sm relative">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-base text-primary-container">terminal</span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">CREATIVE PHILOSOPHY // 創作理念</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface leading-relaxed">
+                擅長將賽博龐克反烏托邦美學與東方霓虹街道文化結合，賦予機械與角色鮮明的靈魂與情緒張力。
+              </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-space-xs">
+                Merging high-density industrial cyberware with organic melancholy, transforming narrative keyframes into tangible cyberpunk universes.
+              </p>
+</div>
+</div>
+</div>
+<!-- Career Trajectory Timeline Panel -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md lg:p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-secondary">history_toggle_off</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wide">CAREER TIMELINE // 創作歷程</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline">CHRONO-LOG</span>
+</div>
+<!-- Vertical Timeline Items -->
+<div class="relative pl-6 space-y-space-md before:absolute before:left-2 before:top-2 before:bottom-2 before:w-0.5 before:bg-surface-container-highest">
+<!-- 2024 Entry -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-3.5 h-3.5 rounded-full bg-primary-container shadow-[0_0_8px_#00f5ff]"></span>
+<div class="bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-primary-container/20 text-primary-fixed-dim rounded font-bold">2024 - PRESENT</span>
+<span class="font-label-sm text-label-sm text-primary-container uppercase tracking-wider">[KEYFRAME LEAD]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Lead Concept Artist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Sci-Fi Animation Project • Worldbuilding &amp; Vehicle Systems</p>
+</div>
+</div>
+<!-- 2022-2023 Entry -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-3.5 h-3.5 rounded-full bg-secondary-fixed-dim"></span>
+<div class="bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-secondary-container/30 text-secondary-fixed rounded font-bold">2022 - 2023</span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider">[IN-STUDIO]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Senior 2D Illustrator</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">CyberForge Studios • Character Concept Art &amp; Cinematic Splash</p>
+</div>
+</div>
+<!-- 2020-2022 Entry -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-3.5 h-3.5 rounded-full bg-surface-container-highest"></span>
+<div class="bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-surface-container-high text-on-surface-variant rounded font-bold">2020 - 2022</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">[CONTRACT]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Freelance Digital Artist</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Global AAA Game IPs • Weapon Mecha Silhouettes &amp; Promo Art</p>
+</div>
+</div>
+<!-- 2018-2020 Entry -->
+<div class="relative group">
+<span class="absolute -left-6 top-1.5 w-3.5 h-3.5 rounded-full bg-surface-container-highest"></span>
+<div class="bg-surface-container p-space-sm rounded-lg">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm px-1.5 py-0.5 bg-surface-container-high text-on-surface-variant rounded font-bold">2018 - 2020</span>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">[ACADEMIC]</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-semibold mt-1">Concept Art &amp; Visual Design</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Bachelor of Fine Arts • Magna Cum Laude &amp; Visual Design Honors</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Technical Skills, Gauges & Software Metrics (xl:col-span-7) -->
+<div class="xl:col-span-7 flex flex-col gap-space-lg">
+<!-- Core Disciplines Telemetry Panel -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md lg:p-space-lg shadow-xl flex flex-col gap-space-lg relative overflow-hidden">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<div class="flex items-center gap-space-xs text-primary-container">
+<span class="material-symbols-outlined text-base">tune</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest">TACTICAL ATTRIBUTES</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-primary font-bold mt-1">Artistic &amp; Visual Specialization</h3>
+</div>
+<span class="font-label-sm text-label-sm px-space-sm py-1 bg-surface-container rounded text-outline">
+              REFRESH_RATE: 120Hz
+            </span>
+</div>
+<!-- Futuristic Segmented Skill Level Meters -->
+<div class="flex flex-col gap-space-md">
+<!-- Skill 1: Digital Painting -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container text-lg">brush</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Digital Painting</span>
+<span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim px-2 py-0.5 bg-secondary-container/20 rounded">
+                    Brushwork &amp; Lighting
+                  </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase">[MASTERED]</span>
+<span class="font-headline-sm text-headline-sm text-primary font-mono font-bold">96%</span>
+</div>
+</div>
+<!-- Segmented Block Gauge -->
+<div class="grid grid-cols-16 gap-1 w-full mt-1">
+<!-- 16 segment grid, 15 filled = 94-96% -->
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Skill 2: Character Design -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-lg">accessibility_new</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Character Design</span>
+<span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim px-2 py-0.5 bg-secondary-container/20 rounded">
+                    Anatomy &amp; Mecha Silhouette
+                  </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-primary-container font-bold uppercase">[MASTERED]</span>
+<span class="font-headline-sm text-headline-sm text-primary font-mono font-bold">92%</span>
+</div>
+</div>
+<!-- 16 segment grid, 14 filled = 88-92% -->
+<div class="grid grid-cols-16 gap-1 w-full mt-1">
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-primary-container shadow-[0_0_6px_#00f5ff]"></div>
+<div class="h-2 rounded-sm bg-surface-container-highest"></div>
+<div class="h-2 rounded-sm bg-surface-container-highest"></div>
+</div>
+</div>
+<!-- Skill 3: Concept Art & Worldbuilding -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col gap-space-xs group hover:bg-surface-container-high transition-colors">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-fixed-dim text-lg">public</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Concept Art</span>
+<span class="hidden sm:inline font-label-sm text-label-sm text-secondary-fixed-dim px-2 py-0.5 bg-secondary-container/20 rounded">
+                    Worldbuilding &amp; Atmosphere
+                  </span>
+</div>
+<div class="flex items-baseline gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim font-bold uppercase">[EXPERT]</span>
+<span class="font-headline-sm text-headline-sm text-primary font-mono font-bold">90%</span>
+</div>
+</div>
+<!-- 16 segment grid, 14 filled -->
+<div class="grid grid-cols-16 gap-1 w-full mt-1">
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-secondary-fixed-dim shadow-[0_0_6px_#e0b6ff]"></div>
+<div class="h-2 rounded-sm bg-surface-container-highest"></div>
+<div class="h-2 rounded-sm bg-surface-container-highest"></div>
+</div>
+</div>
+</div>
+<!-- Inline Technical SVG Radar / Donut Visualization -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="bg-surface-container p-space-md rounded-lg flex items-center gap-space-md">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="15.9155" stroke="#2a2930" stroke-width="3"></circle>
+<circle cx="18" cy="18" fill="none" r="15.9155" stroke="#00f5ff" stroke-dasharray="94, 6" stroke-linecap="round" stroke-width="3"></circle>
+<text class="font-headline-sm font-bold text-center" fill="#e9feff" font-size="8" text-anchor="middle" x="18" y="21">94%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">COMPOSITION LOAD</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Cinematic Mood</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Optimal tone mapping &amp; lens flare rendering</span>
+</div>
+</div>
+<div class="bg-surface-container p-space-md rounded-lg flex items-center gap-space-md">
+<svg class="w-16 h-16 shrink-0" viewbox="0 0 36 36">
+<circle cx="18" cy="18" fill="none" r="15.9155" stroke="#2a2930" stroke-width="3"></circle>
+<circle cx="18" cy="18" fill="none" r="15.9155" stroke="#e0b6ff" stroke-dasharray="89, 11" stroke-linecap="round" stroke-width="3"></circle>
+<text class="font-headline-sm font-bold text-center" fill="#e0b6ff" font-size="8" text-anchor="middle" x="18" y="21">89%</text>
+</svg>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-outline uppercase">PIPELINE ADAPT</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Mecha Industrial</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Hard-surface drafting &amp; orthographic specs</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Software Proficiency & Hardware Engines -->
+<div class="bg-surface-container-low/90 backdrop-blur-xl rounded-xl p-space-md lg:p-space-lg shadow-xl flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-base text-primary-container">memory</span>
+<span class="font-label-lg text-label-lg text-primary tracking-wide">CORE SOFTWARE PRODUCTION MATRIX</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary-fixed-dim uppercase">[64-BIT DUAL-ACCEL]</span>
+</div>
+<!-- Software Detailed Grid with interactive telemetry -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-sm">
+<!-- Photoshop -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between hover:bg-surface-container-high transition-all group relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-[#001e36] text-[#31a8ff] font-bold font-mono flex items-center justify-center text-lg shadow-sm">
+                  Ps
+                </div>
+<span class="font-headline-sm text-headline-sm text-primary-container font-mono font-bold">95%</span>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Adobe Photoshop</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">10+ Years • Core Engine</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-primary-container h-full w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Illustrator -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between hover:bg-surface-container-high transition-all group relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-[#330000] text-[#ff9a00] font-bold font-mono flex items-center justify-center text-lg shadow-sm">
+                  Ai
+                </div>
+<span class="font-headline-sm text-headline-sm text-secondary-fixed-dim font-mono font-bold">88%</span>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Adobe Illustrator</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">Vector &amp; Cyber Graphics</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-secondary-fixed-dim h-full w-[88%]"></div>
+</div>
+</div>
+</div>
+<!-- Procreate -->
+<div class="bg-surface-container p-space-md rounded-lg flex flex-col justify-between hover:bg-surface-container-high transition-all group relative overflow-hidden">
+<div class="flex items-center justify-between">
+<div class="w-10 h-10 rounded bg-[#1e102d] text-secondary-fixed-dim font-bold font-mono flex items-center justify-center text-lg shadow-sm">
+<span class="material-symbols-outlined text-lg">draw</span>
+</div>
+<span class="font-headline-sm text-headline-sm text-primary font-mono font-bold">90%</span>
+</div>
+<div class="mt-space-md flex flex-col">
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">Procreate</span>
+<span class="font-label-sm text-label-sm text-outline mt-0.5">Mobile Sketch &amp; iPad Pro</span>
+<div class="w-full bg-surface-container-highest h-1 rounded-full mt-space-sm overflow-hidden">
+<div class="bg-primary-fixed-dim h-full w-[90%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Secondary Tooling Badges -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<span class="font-label-sm text-label-sm text-outline mr-1">ADDITIONAL PIPELINE:</span>
+<span class="px-space-sm py-1 bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">
+              BLENDER 3D (BLOCKOUT)
+            </span>
+<span class="px-space-sm py-1 bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">
+              CLIP STUDIO PAINT EX
+            </span>
+<span class="px-space-sm py-1 bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">
+              OCTANE RENDER
+            </span>
+<span class="px-space-sm py-1 bg-surface-container rounded font-label-sm text-label-sm text-on-surface-variant hover:text-primary transition-colors cursor-default">
+              PUREREF PIPELINE
+            </span>
+</div>
+</div>
+<!-- Action Bar: Download PDF Dossier & Quick Contact -->
+<div class="bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container p-space-md lg:p-space-lg rounded-xl shadow-xl flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-12 h-12 rounded-lg bg-primary-container text-on-primary flex items-center justify-center shadow-[0_0_15px_rgba(0,245,255,0.4)] shrink-0">
+<span class="material-symbols-outlined text-2xl">picture_as_pdf</span>
+</div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary font-bold">DIGITAL ARTIST DOSSIER // RESUME</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">PDF (2088 REVISED EDITION) • HIGH-RES PORTFOLIO SPEC (48 MB)</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm w-full sm:w-auto">
+<a class="hud-bracket w-full sm:w-auto px-space-lg py-space-sm bg-primary-container hover:bg-primary-fixed-dim text-on-primary font-label-lg text-label-lg uppercase tracking-wider flex items-center justify-center gap-space-xs shadow-[0_0_20px_rgba(0,245,255,0.5)] transition-all" download="" href="#">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span>DOWNLOAD DOSSIER</span>
+</a>
+<a class="hud-bracket px-space-md py-space-sm bg-surface-container-highest hover:bg-secondary-container text-primary font-label-lg text-label-lg uppercase flex items-center justify-center transition-all" href="#">
+<span class="material-symbols-outlined text-base">send</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full relative z-20 bg-surface-container-lowest/90 backdrop-blur-md pt-space-xl pb-space-lg"><div class="w-full px-margin-lg flex flex-col gap-space-lg"><div class="flex flex-col lg:flex-row items-center justify-between gap-space-md"><div class="flex flex-col"><span class="font-headline-sm text-headline-sm text-on-surface font-bold tracking-tight">CYBERCORE SYSTEMS // RUNTIME 4.8.1</span><span class="font-label-sm text-label-sm text-on-surface-variant mt-1">TACTICAL VISUAL DEV • KEYFRAME ILLUSTRATION • ENVIRONMENT DESIGN</span></div><div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant"><a class="hover:text-primary transition-colors" href="#">&lt;ARTSTATION&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;BEHANCE&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;INSTAGRAM&gt;</a><a class="hover:text-primary transition-colors" href="#">&lt;GITHUB&gt;</a></div><a class="px-space-md py-space-sm bg-surface-container-high hover:bg-primary-container hover:text-on-primary text-primary font-label-md text-label-md rounded flex items-center gap-space-xs transition-all" href="#"><span class="material-symbols-outlined text-sm">arrow_upward</span><span>TOP // RETURN</span></a></div><div class="flex flex-col md:flex-row items-center justify-between font-label-sm text-label-sm text-outline gap-space-sm"><div class="flex items-center gap-space-md"><span>LAT: 37.5665° N</span><span>LON: 126.9780° E</span><span>MEM: 128TB OPTICAL</span></div><div><span>© 2088 CYBERPUNK CREATIVE PORTFOLIO. ALL NEURAL RIGHTS RESERVED.</span></div></div></div></footer></body></html>
